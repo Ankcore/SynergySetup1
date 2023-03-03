@@ -15,11 +15,6 @@ body {
     height: 100%;
 }
 
-main {
-    flex-grow: 1;
-}
-
-
 header {
     background-color: #333;
     color: #fff;
@@ -30,7 +25,25 @@ header {
     position: fixed;
     z-index: 999;
     text-align: center;
+    max-height: 140px;
+}
 
+footer {
+    background-color: #555;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    background-color: #ebebeb;
+    margin-top: 140px;
+    padding: 10px;
+    flex-grow: 1;
 }
 
 nav {
@@ -74,11 +87,7 @@ nav a:hover {
     background-color: #777;
 }
 
-main {
-    background-color: #ebebeb;
-    margin-top: 200px;
-    padding: 10px;
-}
+
 
 
 img {
@@ -139,16 +148,4 @@ a {
 a:hover {
     text-decoration: underline;
     /* подчеркивание ссылок при наведении */
-}
-
-footer {
-    background-color: #555;
-    color: #fff;
-    font-size: 14px;
-    /* color: gray; */
-    padding: 10px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
 }

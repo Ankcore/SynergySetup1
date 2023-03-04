@@ -118,11 +118,11 @@ img {
     }
 }
 
-.container {
+/* .container {
     display: flex;
     justify-content: center;
     height: 100%;
-}
+} */
 
 /* контейнер для Заголовка, медиа и текста. Для блока информации */
 .container-content {
@@ -164,6 +164,21 @@ img {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.container-review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-review-textmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
 
 
 

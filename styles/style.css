@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+    height: 140px;
+}
+
+footer {
+    min-height: 30px;
+    background-color: #555;
+    color: #fff;
+    font-size: 14px;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    background-color: #ebebeb;
+    padding: 20px;
+    padding-top: 160px;
+
+}
+
+nav {
+    background-color: #555;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    top: 50px;
+    left: 20;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    text-align: center;
+}
+
+a {
+    color: #0066cc;
+    /* цвет ссылок */
+    text-decoration: none;
+    /* отмена подчеркивания для ссылок */
+}
+
+a:hover {
+    text-decoration: none;
+    /* подчеркивание ссылок при наведении */
+}
+
+/* Стиль изображений. Скругленные края, анимация */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 2%;
+    /* Устанавливаем начальное значение прозрачности */
+    opacity: 10%;
+    /* Задаем задержку для элементов img */
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+/* Задаем анимацию для элементов img */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+/* контейнер для Заголовка, медиа и текста. Для блока информации */
+.container-content {
+    max-width: 1024px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container-simple-text {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+}
+
+/* контейнер для текста и медиа выровненного в колонки */
+.container-technology-textmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.container-technology-textmedia-text {
+    /* flex: 1; */
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container-technology-textmedia-media {
+    /* flex: 1; */
+    margin-top: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+/* Для мобильных устройств: от 320 пикселей до 768 пикселей в ширину.
+Для планшетов: от 768 пикселей до 1024 пикселей в ширину.
+Для настольных компьютеров и ноутбуков: от 1024 пикселей и выше в ширину. */
